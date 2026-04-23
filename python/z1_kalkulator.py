@@ -11,13 +11,14 @@ elif znak == '-':
 elif znak == '*':
     wynik = l1 * l2
 elif znak == '/':
-    wynik = l1 / l2
     if l2 != 0:
         wynik = l1 / l2
     else:
         print("Nie można dzielić przez 0")
+        exit()
 else:
     print("Wybrano nieprawidłowe działanie")
+    exit()
     
 
 print("Wynik: ", wynik)

@@ -2,14 +2,14 @@
 print("C - Celsjusz -> Fahrenheit")
 print("F - Fahrenheit -> Celsjusz")
 
-opcja = input("Wybierz opcję (C/F): ")
+wybor = input("Wybierz opcję (C/F): ")
 
-if opcja == 'C':
+if wybor == 'C':
     c = float(input("Podaj temperaturę w stopniach Celsjusza: "))
     f = c * 1.8 + 32
     print(f"{c} °C = {f} °F")
 
-elif opcja == 'F':
+elif wybor == 'F':
     f = float(input("Podaj temperaturę w stopniach Fahrenheita: "))
     c = (f - 32) / 1.8
     print(f"{f} °F = {c} °C")
