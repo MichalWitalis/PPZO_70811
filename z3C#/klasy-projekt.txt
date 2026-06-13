@@ -1,0 +1,32 @@
+ISprawdzalny (Interfejs)
+Metody: Kontrola()
+
+Grupa: Loty
+Lot (KLASA GŁÓWNA / ABSTRAKCYJNA)
+Właściwości: NumerLotu, CelPodrozy
+Metody: ObliczCene()
+
+LotPasazerski (Dziedziczy po Lot, implementuje ISprawdzalny)
+Właściwości: LiczbaPasazerow
+Metody: ObliczCene(), Kontrola()
+
+LotTowarowy (Dziedziczy po Lot)
+Właściwości: WagaLadunku, Ladunek (Powiązanie z obiektem Towar)
+Metody: ObliczCene()
+
+Grupa: Ludzie (Pasażerowie)
+Osoba (KLASA GŁÓWNA / ABSTRAKCYJNA)
+Właściwości: ImieInazwisko
+
+Pasazer (Dziedziczy po Osoba, powiązany z Lot)
+Właściwości: NumerBiletu, PrzypisanyLot
+
+Grupa: Towary (Cargo)
+Towar (KLASA GŁÓWNA / ABSTRAKCYJNA)
+Właściwości: Nazwa, Waga
+
+TowarZwykly (Dziedziczy po Towar)
+Właściwości: CzyWymagaChlodzenia
+
+TowarNiebezpieczny (Dziedziczy po Towar)
+Właściwości: KlasaToksycznosci, NumerCertyfikatu
